@@ -1,0 +1,131 @@
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Dashboard
+    link(rel="stylesheet" href="../src/styles/style.css")
+  body
+    .container
+      aside.sidebar
+        .sidebar__logo
+          span.sidebar__logo-svg
+          h2.sidebar__title Dashboard
+        nav.nav-menu
+          .nav-menu__title-wrap
+            span.nav-svg
+            h3.nav-menu__title Dashboard
+          ul.nav-menu__list
+            li.nav-menu__item
+              span.nav-menu__svg-3d
+              a.nav-menu__link(href="#") Product
+              span.nav-menu__svg-arrow
+            li.nav-menu__item.nav-menu__item-active
+              span.nav-menu__svg-user
+              a.nav-menu__link.nav-menu__link-active(href="#") Customers
+              span.nav-menu__svg-arrow.nav-menu__svg-arrow.nav-menu__svg-arrow-active
+            li.nav-menu__item
+              span.nav-menu__svg-wallet
+              a.nav-menu__link(href="#") Income
+              span.nav-menu__svg-arrow
+            li.nav-menu__item
+              span.nav-menu__svg-discount
+              a.nav-menu__link(href="#") Promote
+              span.nav-menu__svg-arrow
+            li.nav-menu__item
+              span.nav-menu__svg-message
+              a.nav-menu__link(href="#") Help
+              span.nav-menu__svg-arrow
+          .user-info
+            img.user-info__avatar(src="/src/images/PM.jpg" alt="User Avatar")
+            .user-info__wrap
+              span.user-info__name Evano
+              span.user-info__position Project Manager
+      main.main-content
+        header.header
+          h2.header__greeting Hello Evano 
+          span.header__wave 👋
+        section.section-tab
+          .header-tab
+            .header-wrap
+              h2.header-all All Customers
+              h3.header-active Active Members
+            .search
+              .searh-svg
+              input.search-input(type='text' placeholder='Search')
+          .customers__row
+            .customers__column.customers__column--header.customers__column--name Customer Name
+            .customers__column.customers__column--header.customers__column--company Company
+            .customers__column.customers__column--header.customers__column--phone Phone Number
+            .customers__column.customers__column--header.customers__column--email Email
+            .customers__column.customers__column--header.customers__column--country Country
+            .customers__column.customers__column--header.customers__column--status Status
+          .customers__row
+            .customers__column.customers__column--name Jane Cooper
+            .customers__column.customers__column--company Microsoft
+            .customers__column.customers__column--phone (225) 555-0118
+            .customers__column.customers__column--email jane@microsoft.com
+            .customers__column.customers__column--country United States
+            .customers__column.customers__column--status.customers__column--status-active Active
+          .customers__row
+            .customers__column.customers__column--name Floyd Miles
+            .customers__column.customers__column--company Yahoo
+            .customers__column.customers__column--phone (205) 555-0100
+            .customers__column.customers__column--email floyd@yahoo.com
+            .customers__column.customers__column--country Kiribati
+            .customers__column.customers__column--status.customers__column--status-inactive Inactive
+          .customers__row
+            .customers__column.customers__column--name Ronald Richards
+            .customers__column.customers__column--company Adobe
+            .customers__column.customers__column--phone (302) 555-0107
+            .customers__column.customers__column--email ronald@adobe.com
+            .customers__column.customers__column--country Israel
+            .customers__column.customers__column--status.customers__column--status-inactive Inactive
+          .customers__row
+            .customers__column.customers__column--name Marvin McKinney
+            .customers__column.customers__column--company Tesla
+            .customers__column.customers__column--phone (252) 555-0126
+            .customers__column.customers__column--email marvin@tesla.com
+            .customers__column.customers__column--country Iran
+            .customers__column.customers__column--status.customers__column--status-active Active
+          .customers__row
+            .customers__column.customers__column--name Jerome Bell
+            .customers__column.customers__column--company Google
+            .customers__column.customers__column--phone (629) 555-0129
+            .customers__column.customers__column--email jerome@google.com
+            .customers__column.customers__column--country Réunion
+            .customers__column.customers__column--status.customers__column--status-active Active
+          .customers__row
+            .customers__column.customers__column--name Kathryn Murphy
+            .customers__column.customers__column--company Microsoft
+            .customers__column.customers__column--phone (406) 555-0120
+            .customers__column.customers__column--email kathryn@microsoft.com
+            .customers__column.customers__column--country Curaçao
+            .customers__column.customers__column--status.customers__column--status-active Active
+          .customers__row
+            .customers__column.customers__column--name Jacob Jones
+            .customers__column.customers__column--company Yahoo
+            .customers__column.customers__column--phone (208) 555-0112
+            .customers__column.customers__column--email jacob@yahoo.com
+            .customers__column.customers__column--country Brazil
+            .customers__column.customers__column--status.customers__column--status-active Active
+          .customers__row
+            .customers__column.customers__column--name Kristin Watson
+            .customers__column.customers__column--company Facebook
+            .customers__column.customers__column--phone (704) 555-0127
+            .customers__column.customers__column--email kristin@facebook.com
+            .customers__column.customers__column--country Åland Islands
+            .customers__column.customers__column--status.customers__column--status-inactive Inactive
+          .customers__pagination
+            p Showing data 1 to 8 of 256k entries
+            nav.customers__nav
+              ul.customers__pagination-list
+                li.customers__pagination-item--svgL: a(href='#')
+                li.customers__pagination-item.customers__pagination--item-active: a(href='#') 1
+                li.customers__pagination-item: a(href='#') 2
+                li.customers__pagination-item: a(href='#') 3
+                li.customers__pagination-item: a(href='#') 4
+                li.customers__pagination-item: a(href='#') ...
+                li.customers__pagination-item: a(href='#') 40
+                li.customers__pagination-item--svgR: a(href='#')

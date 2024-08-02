@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../src/styles/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="sidebar__logo"><span class="sidebar__logo-svg"></span>
+          <h2 class="sidebar__title">Dashboard</h2>
+        </div>
+        <nav class="nav-menu">
+          <div class="nav-menu__title-wrap"><span class="nav-svg"></span>
+            <h3 class="nav-menu__title">Dashboard</h3>
+          </div>
+          <ul class="nav-menu__list">
+            <li class="nav-menu__item"><span class="nav-menu__svg-3d"></span><a class="nav-menu__link" href="#">Product</a><span class="nav-menu__svg-arrow"></span></li>
+            <li class="nav-menu__item nav-menu__item-active"><span class="nav-menu__svg-user"></span><a class="nav-menu__link nav-menu__link-active" href="#">Customers</a><span class="nav-menu__svg-arrow"></span></li>
+            <li class="nav-menu__item"><span class="nav-menu__svg-wallet"></span><a class="nav-menu__link" href="#">Income</a><span class="nav-menu__svg-arrow"></span></li>
+            <li class="nav-menu__item"><span class="nav-menu__svg-discount"></span><a class="nav-menu__link" href="#">Promote</a><span class="nav-menu__svg-arrow"></span></li>
+            <li class="nav-menu__item"><span class="nav-menu__svg-message"></span><a class="nav-menu__link" href="#">Help</a><span class="nav-menu__svg-arrow"></span></li>
+          </ul>
+          <div class="user-info"><img class="user-info__avatar" src="/src/images/PM.jpg" alt="User Avatar">
+            <div class="user-info__wrap"><span class="user-info__name">Evano</span><span class="user-info__position">Project Manager</span></div>
+          </div>
+        </nav>
+      </aside>
+      <main class="main-content">
+        <header class="header">
+          <h2 class="header__greeting">Hello Evano </h2><span class="header__wave">👋</span>
+        </header>
+        <section class="section-tab">
+          <div class="header-tab">
+            <div class="header-wrap">
+              <h2 class="header-all">All Customers</h2>
+              <h3 class="header-active">Active Members</h3>
+            </div>
+            <div class="search">
+              <div class="searh-svg"></div>
+              <input class="search-input" type="text" placeholder="Search">
+            </div>
+          </div>
+          <div class="customers__row">
+            <div class="customers__column customers__column--header customers__column--name">Customer Name</div>
+            <div class="customers__column customers__column--header customers__column--company">Company</div>
+            <div class="customers__column customers__column--header customers__column--phone">Phone Number</div>
+            <div class="customers__column customers__column--header customers__column--email">Email</div>
+            <div class="customers__column customers__column--header customers__column--country">Country</div>
+            <div class="customers__column customers__column--header customers__column--status">Status</div>
+          </div>
+          <div class="customers__row">
+            <div class="customers__column customers__column--name">Jane Cooper</div>
+            <div class="customers__column customers__column--company">Microsoft</div>
+            <div class="customers__column customers__column--phone">(225) 555-0118</div>
+            <div class="customers__column customers__column--email">jane@microsoft.com</div>
+            <div class="customers__column customers__column--country">United States</div>
+            <div class="customers__column customers__column--status customers__column--status-active">Active</div>
+          </div>
+          <div class="customers__row">
+            <div class="customers__column customers__column--name">Floyd Miles</div>
+            <div class="customers__column customers__column--company">Yahoo</div>
+            <div class="customers__column customers__column--phone">(205) 555-0100</div>
+            <div class="customers__column customers__column--email">floyd@yahoo.com</div>
+            <div class="customers__column customers__column--country">Kiribati</div>
+            <div class="customers__column customers__column--status customers__column--status-inactive">Inactive</div>
+          </div>
+          <div class="customers__row">
+            <div class="customers__column customers__column--name">Ronald Richards</div>
+            <div class="customers__column customers__column--company">Adobe</div>
+            <div class="customers__column customers__column--phone">(302) 555-0107</div>
+            <div class="customers__column customers__column--email">ronald@adobe.com</div>
+            <div class="customers__column customers__column--country">Israel</div>
+            <div class="customers__column customers__column--status customers__column--status-inactive">Inactive</div>
+          </div>
+          <div class="customers__row">
+            <div class="customers__column customers__column--name">Marvin McKinney</div>
+            <div class="customers__column customers__column--company">Tesla</div>
+            <div class="customers__column customers__column--phone">(252) 555-0126</div>
+            <div class="customers__column customers__column--email">marvin@tesla.com</div>
+            <div class="customers__column customers__column--country">Iran</div>
+            <div class="customers__column customers__column--status customers__column--status-active">Active</div>
+          </div>
+          <div class="customers__row">
+            <div class="customers__column customers__column--name">Jerome Bell</div>
+            <div class="customers__column customers__column--company">Google</div>
+            <div class="customers__column customers__column--phone">(629) 555-0129</div>
+            <div class="customers__column customers__column--email">jerome@google.com</div>
+            <div class="customers__column customers__column--country">Réunion</div>
+            <div class="customers__column customers__column--status customers__column--status-active">Active</div>
+          </div>
+          <div class="customers__row">
+            <div class="customers__column customers__column--name">Kathryn Murphy</div>
+            <div class="customers__column customers__column--company">Microsoft</div>
+            <div class="customers__column customers__column--phone">(406) 555-0120</div>
+            <div class="customers__column customers__column--email">kathryn@microsoft.com</div>
+            <div class="customers__column customers__column--country">Curaçao</div>
+            <div class="customers__column customers__column--status customers__column--status-active">Active</div>
+          </div>
+          <div class="customers__row">
+            <div class="customers__column customers__column--name">Jacob Jones</div>
+            <div class="customers__column customers__column--company">Yahoo</div>
+            <div class="customers__column customers__column--phone">(208) 555-0112</div>
+            <div class="customers__column customers__column--email">jacob@yahoo.com</div>
+            <div class="customers__column customers__column--country">Brazil</div>
+            <div class="customers__column customers__column--status customers__column--status-active">Active</div>
+          </div>
+          <div class="customers__row">
+            <div class="customers__column customers__column--name">Kristin Watson</div>
+            <div class="customers__column customers__column--company">Facebook</div>
+            <div class="customers__column customers__column--phone">(704) 555-0127</div>
+            <div class="customers__column customers__column--email">kristin@facebook.com</div>
+            <div class="customers__column customers__column--country">Åland Islands</div>
+            <div class="customers__column customers__column--status customers__column--status-inactive">Inactive</div>
+          </div>
+          <div class="customers__pagination">
+            <p>Showing data 1 to 8 of 256k entries</p>
+            <nav class="customers__nav">
+              <ul class="customers__pagination-list">
+                <li class="customers__pagination-item--svgL"><a href="#"></a></li>
+                <li class="customers__pagination-item customers__pagination--item-active"><a href="#">1</a></li>
+                <li class="customers__pagination-item"><a href="#">2</a></li>
+                <li class="customers__pagination-item"><a href="#">3</a></li>
+                <li class="customers__pagination-item"><a href="#">4</a></li>
+                <li class="customers__pagination-item"><a href="#">...</a></li>
+                <li class="customers__pagination-item"><a href="#">40</a></li>
+                <li class="customers__pagination-item--svgR"><a href="#"></a></li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
